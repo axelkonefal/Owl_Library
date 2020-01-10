@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e2951"
+    tools:context=".AddBookActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="94dp"
+                android:layout_gravity="center"
+                android:paddingVertical="15dp"
+                android:text="ADD YOUR BOOK HERE"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/bookTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book title"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/bookTitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#02F9AA"
+                android:drawableTint="#02F9AA"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAllCaps="false"
+                android:textColor="#F5F5F5"
+                android:textColorHighlight="#6502F9AA"
+                android:textColorLink="#02F9AA"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSelectHandle="@color/colorAccent"
+                android:textSelectHandleLeft="@color/colorAccent"
+                android:textSelectHandleRight="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/authorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Author"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/authorEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#02F9AA"
+                android:drawableTint="#02F9AA"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAllCaps="false"
+                android:textColor="#F5F5F5"
+                android:textColorHighlight="#6502F9AA"
+                android:textColorLink="#02F9AA"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSelectHandle="@color/colorAccent"
+                android:textSelectHandleLeft="@color/colorAccent"
+                android:textSelectHandleRight="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/categoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Category"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+            <Spinner
+                android:id="@+id/categorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#02F9AA"
+                android:soundEffectsEnabled="false"
+                android:spinnerMode="dropdown"
+                android:splitMotionEvents="true"
+                android:touchscreenBlocksFocus="false" />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Description"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edit_text"
+                android:backgroundTint="#02F9AA"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="5"
+                android:maxLines="5"
+                android:padding="8dp"
+                android:textColor="#F5F5F5"
+                android:textColorHint="#02F9AA" />
+
+            <TextView
+                android:id="@+id/ratingBarTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Rate Book"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#00000000"
+                android:numStars="5"
+                android:progressBackgroundTint="#8A77611C"
+                android:progressTint="#D4AF37"
+                android:rating="5"
+                android:stepSize="1" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_button"
+                android:onClick="submitOnClick"
+                android:paddingLeft="25dp"
+                android:paddingTop="15dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="15dp"
+                android:text="SUBMIT"
+                android:textColor="#2e2951"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/goBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:onClick="goBackOnClick"
+                android:paddingLeft="25dp"
+                android:paddingTop="15dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="15dp"
+                android:text="GO BACK"
+                android:textColor="#2e2951"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

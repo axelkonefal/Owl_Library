@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e2951"
+    tools:context=".AboutActivity">
+
+
+    <TextView
+        android:id="@+id/aboutTextView"
+        android:layout_width="392dp"
+        android:layout_height="296dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra urna urna, et vulputate tortor fringilla in. Pellentesque volutpat ac dolor nec ultrices. Proin viverra nulla lacinia ante sodales, in pellentesque lorem semper. Nulla vitae nisi et neque suscipit tristique. Aliquam dapibus lacinia eros, pretium aliquet nisi egestas quis. Mauris ipsum justo, aliquet vel auctor a, consequat ornare mauris. Vivamus in sem vel sapien porta egestas. In elit turpis, malesuada id egestas id, laoreet vitae lorem. Proin id justo at diam ultricies vehicula. Praesent diam eros, consequat posuere viverra lacinia, hendrerit in sem. Sed maximus sapien volutpat dapibus mollis."
+        android:textAlignment="center"
+        android:textColor="#02F9AA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="251dp"
+        android:layout_height="221dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutTextView"
+        app:srcCompat="@drawable/sowa2" />
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="goBackOnClick"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="15dp"
+        android:text="GO BACK"
+        android:textColor="#2e2951"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
